@@ -10,7 +10,8 @@ body {
 
 .container {
   width: 100%;
-  /* border: .02px solid blue; */
+  display: block;
+  margin: 0 auto;
 }
 
 h1 {
@@ -21,6 +22,17 @@ h1 {
   font-family: sans-serif;
   font-weight: 500;
   letter-spacing: 2.5px;
+}
+
+.preview {
+  background-size: cover;
+  background-position: center;
+  float: left;
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  height: 290px;
+  /* border: .02px solid blue; */
 }
 
 .baku {
@@ -39,50 +51,29 @@ h1 {
   background-image: url(../images/rome.jpg);
 }
 
-.preview {
-  /* background-image: url(../images/baku.jpg); */
-  background-size: cover;
-  background-position: center;
-  float: left;
-  position: relative;
-  right: 4%;
-  width: 100%;
-  padding: 5px;
-  margin: 4%;
-  height: 290px;
-  /* border: .02px solid blue; */
-}
-
 .preview h1 {
   text-align: left;
-  padding: 10px;
   font-size: 18px;
   font-variant: normal;
   font-family: serif;
   letter-spacing: normal;
 }
 
-
-
 @media screen and (min-width: 575px) {
     .preview {
-      margin: .8%;
+      display: block;
+      margin: 2% auto;
       width: 40%;
       height: 200px;
       float: left;
-      position: relative;
-      right: -8%;
     }
   }
 
 @media screen and (min-width: 991px) {
     .preview {
       background-position: left;
-      margin: .4%;
       width: 15%;
       height: 170px;
       float: left;
-      position: relative;
-      right: -18.5%;
     }
   }
